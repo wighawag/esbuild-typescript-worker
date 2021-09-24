@@ -1,0 +1,17 @@
+{
+  "name": "esbuild-worker",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "esbuild --bundle --sourcemap --outdir=dist ./src/index.js",
+    "dev": "miniflare --watch --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.13.2",
+    "miniflare": "^1.4.1"
+  }
+}
