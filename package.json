@@ -4,7 +4,7 @@
   "description": "",
   "module": "dist/index.mjs",
   "scripts": {
-    "build": "node build.js",
+    "build": "esbuild --bundle --sourcemap --format=esm --outfile=dist/index.mjs ./src/index.ts",
     "build:check": "npx tsc && node build.js",
     "dev": "miniflare --watch --debug"
   },
