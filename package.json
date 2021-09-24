@@ -2,9 +2,10 @@
   "name": "esbuild-worker",
   "version": "1.0.0",
   "description": "",
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
-    "build": "esbuild --bundle --sourcemap --outdir=dist ./src/index.js",
+    "build": "node build.js",
+    "build:check": "npx tsc && node build.js",
     "dev": "miniflare --watch --debug"
   },
   "keywords": [],
